@@ -4,12 +4,12 @@ import React from 'react'
 const TaskCard = ({ task }) => {
     return (
         <div>
-            <div className='w-[300px] flex flex-col border border-white p-5 rounded-xl space-y-3 shadow-md shadow-white/40'>
+            <div className='w-[300px] flex flex-col border border-white p-5 rounded-xl space-y-3 shadow-md shadow-white/40 bg-gray-800'>
                 <div className='font-bold text-2xl flex justify-between w-full'>
                     <div>
                         {task?.title}
                     </div>
-                    <div className='text-xs flex items-center p-2 rounded-full bg-blue-500'>
+                    <div className='text-xs flex items-center p-2 rounded-full bg-lime-500'>
                         <button>{task?.status == true ? 'Complete' : 'Incomplete'}</button>
                     </div>
                 </div>

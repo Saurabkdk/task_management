@@ -23,7 +23,7 @@ export default async function Home() {
   return (
     <>
       <div className='mt-6 py-10 flex justify-center rounded-xl'>
-        <div className='bg-white p-10 rounded-xl w-3/5 flex justify-center'>
+        <div className='bg-white p-8 rounded-xl w-3/5 flex justify-center'>
           <p className='text-3xl text-blue-500'>Never miss your tasks!</p>
         </div>
       </div>
