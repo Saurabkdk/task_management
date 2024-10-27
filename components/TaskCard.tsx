@@ -10,7 +10,7 @@ const TaskCard = ({ task }) => {
                         {task?.title}
                     </div>
                     <div className='text-xs flex items-center p-2 rounded-full bg-blue-500'>
-                        <button>{task?.status == false ? 'Complete' : 'Incomplete'}</button>
+                        <button>{task?.status == true ? 'Complete' : 'Incomplete'}</button>
                     </div>
                 </div>
                 <div className='text-md'>

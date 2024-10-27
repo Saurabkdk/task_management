@@ -8,10 +8,12 @@ import { redirect } from "next/navigation";
 export const createTask = async (formData: FormData) => {
     try {
         const session = await auth();
+        const status = formData.get('status') as string;
         await prisma.tasks.create({
             data: {
                 title: formData.get('title') as string,
                 description: formData.get('description') as string,
+                status: status == 'C' ? true : false,
                 user: {
                     connectOrCreate: {
                         where: {

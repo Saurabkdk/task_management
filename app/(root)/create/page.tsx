@@ -14,6 +14,12 @@ const page = () => {
                         <input type="text" name="title" className='h-[50px] rounded-md text-black' placeholder='Title' />
                         <label>Description:</label>
                         <textarea rows={5} cols={10} name="description" className='text-black' placeholder='Description...' />
+                        <label htmlFor='C'>Complete
+                            <input type="radio" name="status" value="C" className='ml-3' />
+                        </label>
+                        <label htmlFor='Nc'>Incomplete
+                            <input type="radio" name="status" value="NC" className='ml-3' defaultChecked />
+                        </label>
                         <button type="submit" className='p-3 bg-lime-500 rounded-md'>Create</button>
                     </form>
                 </div>

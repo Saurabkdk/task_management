@@ -8,7 +8,7 @@ const Navbar = async () => {
 
   return (
     <div>
-      <nav className='flex justify-between text-xl'>
+      <nav className='flex justify-between text-xl sticky top-0 backdrop-blur-md'>
         <div>
           <Link href='/'>
             <Image src='/logo.png' width={50} height={50} alt='logo' />

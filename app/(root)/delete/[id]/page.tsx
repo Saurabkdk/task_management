@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 import React from 'react'
 
 const page = async ({params} : {params: {id: string}}) => {
-    const val = await params;
+    const val = params;
     try {
         await prisma.tasks.delete({
             where: {
